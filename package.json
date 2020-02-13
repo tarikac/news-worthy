@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "All news scraper",
   "engines": {
-  "node": "11.10.1",
-  "npm": "6.9.2"
+    "node": "11.10.1",
+    "npm": "6.9.2"
   },
   "main": "server.js",
   "scripts": {

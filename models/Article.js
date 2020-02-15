@@ -18,6 +18,7 @@ var ArticleSchema = new Schema({
   },
   content: {
       type: String,
+      require: true
 
   },
   // `note` is an object that stores a Note id

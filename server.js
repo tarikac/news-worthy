@@ -42,6 +42,16 @@ app.get("/scrape", function(req, res) {
         .find("h2")
         .children("a")
         .attr("href");
+      // links without a direct path need to point directly to digg not my site. create if
+      // statement to add the site url before the foward slash. ig "/video"
+      var str = result.link
+      console.log (str);
+      var n = str.startsWith("/")
+       if(n == true){
+         result.link = "https://digg.com" + result.link
+       }
+       console.log(result.link); //check to make sure the links work
+      
       result.content = $(this)
         .find("p")
         .text();

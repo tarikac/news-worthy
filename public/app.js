@@ -2,7 +2,7 @@
 $.getJSON("/articles", function(data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
-      // Display the apropos information on the page
+   
       $("#articles")
       .prepend(
       "<div class='card blue-grey lighten-4'><div class='card-action indigo darken-2'> <span class='card-title white-text'>" 
@@ -11,7 +11,7 @@ $.getJSON("/articles", function(data) {
       + "</span></div><br /><div class='card-content white-text'><p class='black-text'>" 
       + data[i].content
       + "<br /><a target='_blank' href='"  
-      + data[i].link 
+      + data[i].link
       + "' target='_blank'> Read This Article </a>" 
       + "</p></div></div><br />" );
     }

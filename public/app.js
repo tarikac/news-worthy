@@ -7,7 +7,7 @@ $.getJSON("/articles", function(data) {
       .prepend(
       "<div class='card blue-grey lighten-4'><div class='card-action indigo darken-2'> <span class='card-title white-text'>" 
       + data[i].title 
-      + "<a class='waves-effect waves-light btn-small indigo darken-4 right'> <i class='material-icons left'>comment</i>Comment</a>"
+      + "<a class='waves-effect waves-light btn-small indigo darken-4 right modal-trigger' href='#modal1'> <i class='material-icons left'>comment</i>Comment</a>"
       + "</span></div><br /><div class='card-content white-text'><p class='black-text'>" 
       + data[i].content
       + "<br /><a target='_blank' href='"  
